@@ -1,0 +1,89 @@
+header {
+  width: 95%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Checkout Cart, Shipping Prices */
+
+.cart-item, .shipping-item {
+  width: 100%;
+  min-width: 400px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+}
+/* Button */
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: white;
+  color: #1976d2;
+}
+
+.fancy-button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+}
+
+table {
+      width: 58%;
+      margin-left: 300px;
+      font-weight: bolder;
+      font-size: 24px;
+      border-style: solid;
+      border-color: blue;
+      border-style: solid collapse;
+      
+}
+aside {border-style: solid;
+  border-color: blue;
+width: 56%;
+margin-left: 300px;
+padding-left: 30px;
+padding-top: 30px;
+font-size: 24px;
+}
+
+span {
+  color: #1976d2;
+  font-weight: bold;  
+}
+

@@ -1,0 +1,47 @@
+<header>
+  
+<a> <h1>PcGamer</h1></a>
+
+<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+</header>
+
+ <!-- 
+
+<section>
+    -->
+<table   width="60%" border="2px solid black collapse" style="background-color:#ffffff">
+  <tr>
+      <th > Ref  </th> 
+      <th > Marque  </th> 
+      <th > Processeur  </th> 
+   </tr>
+    <tr   *ngFor="let pc of pcs; let i = index"   (click)="onSelect(pc)">
+        <td> <a href="#">   {{pc.ref}} </a>  </td>
+       <td> {{pc.marque}}     </td>
+        <td>  {{pc.processeur}}  </td>
+    </tr>
+ </table>
+      
+ <!--     
+
+</section>
+<aside>
+  <app-detail  [poste]="selectedPc" ></app-detail>
+  
+-->
+
+<div  *ngIf="selectedPc">
+    <div><img src={{selectedPc.imageUrl}} ></div>
+    <h2>{{selectedPc.marque }} Caractéristiques </h2>
+    <div><span>Processeur:</span> {{selectedPc.processeur}}</div>
+    <div><span>RAM:</span> {{selectedPc.ram}}</div>
+    <div><span>Carte graphique: </span>{{selectedPc.carte_graphique}}</div>
+    <div><span>Disque dur:</span> {{selectedPc.disque_dur}}</div>
+    <div><span>Prix: </span> {{selectedPc.prix}}  DT</div>
+  </div>
+
+ <!-- 
+</aside>
+<footer>Prix total=total()</footer>
+
+-->
